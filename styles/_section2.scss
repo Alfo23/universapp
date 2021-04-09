@@ -1,36 +1,45 @@
 .sezione2 {
 
     .container{
-        // display: grid;
         
-        // justify-content: center;
-        // align-items: center;
-        // grid-template-columns: repeat(3, 1fr);
-        // grid-template-rows: 1fr 1fr 1fr;
-         display: flexbox;
-                
+        @mixin flex {
+            display: inline-flex;
+            flex-direction: column;
+        } 
+            
+        
 
         .box {
-            
+            display: inline-flex;
+            flex-direction: column;
+            width: 351px;
             background: red;
             border-radius: 5px;
             margin-top: 5rem;
             
+            
         }
 
         .box1 {
-
-            display: flex;
+            margin-left: 15rem;
+            height: 400px;
+            #img1 {
+                @include flex();
+                background: center center/cover url(../immagini/corsi_pro.png);
+                width: 350px;
+                height: 200px;
+            }
+            // display: flex;
             // flex-direction: column;
             // justify-content: center;
             // margin-right: 10px;
 
-            // #img1 {
-            //     transform: scale(0.5);
             
-            // }
         }
-    
+        
+        .box3 {
+            display: inline-block;
+        }
     }
 
     

@@ -118,19 +118,39 @@ body {
   border: blueviolet 1px solid;
 }
 
-.sezione2 .container {
-  display: flexbox;
-}
-
 .sezione2 .container .box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 351px;
   background: red;
   border-radius: 5px;
   margin-top: 5rem;
 }
 
 .sezione2 .container .box1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: 15rem;
+  height: 400px;
+}
+
+.sezione2 .container .box1 #img1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: center center/cover url(../immagini/corsi_pro.png);
+  width: 350px;
+  height: 200px;
+}
+
+.sezione2 .container .box3 {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
