@@ -1,0 +1,29 @@
+.navbar {
+    display: flex; 
+    background: #000;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+        margin-left: 20rem;
+        background: url(../immagini/logo.png);
+        width: 87px;
+        height: 60px;
+    }
+
+    &-list {
+        ul {
+            display: flex;
+            margin-right: 20rem;
+            li {
+                list-style: none;
+                
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        padding: 20px;
+    }
+}
